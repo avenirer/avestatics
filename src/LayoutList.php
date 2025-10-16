@@ -127,6 +127,9 @@ class LayoutList
 
     public static function buildListPages($archiveFileName, $layout, $toReplace, $componentHtml, $filesData, $archivePublicDir,  $itemsPerPage = 20, $orderBy = 'datetime desc') {
 
+        //TODO: WE SHOULD ALSO CREATE A PAGINATION DIV THAT SHOULD CONTAIN ALL PAGES THAT WE CREATE BELOW
+        
+
 
         $sortOrder = strpos($orderBy, 'asc') !== false ? SORT_ASC : SORT_DESC;
         $orderBy = strpos($orderBy, 'timestamp') === 0 ? 'timestamp' : 'file';
